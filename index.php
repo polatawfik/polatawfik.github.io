@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Pola Tawfik</h1>
+    <?php echo('Hello World'); ?>
 <!--     <img src="/assets/images/Pola.jpeg" Height="700px" Width="500px"> -->
 
     <a>HOME</a>

@@ -5,9 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pola's Website</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/js/script.js">
-    <!-- <script src="/assets/js/script.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/js/script.js"> -->
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+    </script>
 
 </head>
 <body>
@@ -34,7 +56,7 @@
         <div id="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="/assets/images/Pola.jpeg">
+                    <img src="./assets/images/Pola.jpeg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -48,8 +70,8 @@
 
                         <div class="tab-titles">
                             <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class = "tab-links" onclick="opentab('experience')>Experience</p>
-                            <p class = "tab-links" onclick="opentab('education')>Education</p>
+                            <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class = "tab-links" onclick="opentab('education')">Education</p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>

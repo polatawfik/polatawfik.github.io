@@ -12,7 +12,7 @@ function opentab(tabname){
         tabcontent.classList.remove("active-tab");
     }
 
-    event.currentTarget.classList.add("active-link");
+    events.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 
 }
